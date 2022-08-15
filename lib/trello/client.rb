@@ -56,6 +56,11 @@ module Trello
       end
     end
 
+
+    def delete_webhook(id)
+      delete("/webhooks/#{id}")
+    end
+
     # Creates resource with given options (attributes)
     #
     # Examples:
